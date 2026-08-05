@@ -35,3 +35,16 @@ function cadastro() {
 
     
 }
+
+
+    let botao = document.getElementById("meuBotao");
+
+    botao.addEventListener("mouseenter", function() {
+        botao.style.backgroundColor = "ultraviolet";
+        botao.style.color = "white";
+    });
+
+        botao.addEventListener("mouseleave", function() {
+        botao.style.backgroundColor = "";
+        botao.style.color = "";
+    });
