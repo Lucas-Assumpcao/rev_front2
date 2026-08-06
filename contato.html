@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="jane.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Jane HairStylist</title>
+    <title>Jane HairStylist</title>
 </head>
 <body>
-    
+    <header class="pai">
+        <div class="hfilho1">
+            <h1>Jane</h1>
+        </div>
+        <div class="hfilho2">
+            <nav class="menu">
+                
+                    <p><a href="jane.html">Sobre</a></p>
+                    <p><a href="servicos.html">Serviços</a></p>
+                    <p><a href="salao.html">Salão</a></p>
+                    <p><a href="contato.html">Contato</a></p>
+                
+            </nav>
+        </div>
+
+    </header>
+
+<main class="contato">
+    <div class="contato-filho1">
+        <h1>Entre em Contato</h1>
+        <p>Estamos aqui para ouvir você! Se tiver dúvidas, sugestões ou quiser agendar um horário, preencha o formulário abaixo ou utilize os nossos canais de contato. Nossa equipe terá prazer em atendê-lo.</p>
+    </div>
+    <div class="contato-filho2">
+        <form action="enviar_contato.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <laber for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+</main>
+
 </body>
+   <footer><p>&copy; 2026 Jane HairStylist. Todos os direitos reservados.</p></footer>
 <script src="jane.js"></script>
 </html>
