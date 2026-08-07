@@ -24,36 +24,60 @@
 
     </header>
 
-<main class="contato">
-    <div class="contato-filho1">
-        <h1>Entre em Contato</h1>
-        <p>Estamos aqui para ouvir você! Se tiver dúvidas, sugestões ou quiser agendar um horário, preencha o formulário abaixo ou utilize os nossos canais de contato. Nossa equipe terá prazer em atendê-lo.</p>
-    </div>
-    <div class="contato-filho2">
-        <form action="enviar_contato.php" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+<main class="contato-pagina">
+    <section class="contato-card">
+        <div class="contato-form">
+            <h1>Contato</h1>
+            <p>Estamos aqui para ouvir você! Preencha o formulário abaixo e nossa equipe entrará em contato o mais rápido possível.</p>
+            <form action="#" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
 
-            <laber for="assunto">Assunto:</label>
-            <input type="text" id="assunto" name="assunto" required>
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Motivo do contato" required>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem" required></textarea>
 
-            <button type="submit">Enviar</button>
-        </form>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
 
-    </div>
-
+        <aside class="contato-info">
+            <div>
+                <h2>Local</h2>
+                <p>Alameda Araguaia, 861 - Alphaville Comercial, Barueri - SP, 06455-000</p>
+            </div>
+            <div>
+                <h2>Contato</h2>
+                <p>(11) 4208-2121<br>(11) 94786-9919</p>
+            </div>
+            <div>
+                <h2>Horário</h2>
+                <p>Terça a Sábado das 09h às 19h</p>
+            </div>
+            <div>
+                <h2>Nas Redes</h2>
+                <div class="info-redes">
+                    <a href="#" class="rede whatsapp" aria-label="WhatsApp">W</a>
+                    <a href="#" class="rede instagram" aria-label="Instagram">I</a>
+                    <a href="#" class="rede facebook" aria-label="Facebook">F</a>
+                </div>
+            </div>
+        </aside>
+    </section>
 </main>
 
-</body>
-   <footer><p>&copy; 2026 Jane HairStylist. Todos os direitos reservados.</p></footer>
+<footer><p>&copy; 2026 Jane HairStylist. Todos os direitos reservados.</p></footer>
+<a class="whatsapp-float" href="https://wa.me/5511947869919" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+    <span>💬</span>
+</a>
 <script src="jane.js"></script>
+</body>
 </html>

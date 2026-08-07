@@ -105,11 +105,164 @@ footer {
     margin-bottom: 20px;
 }
 
-.contato-filho2 input{
+.contato-pagina {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 80px;
+}
+
+.contato-card {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    width: min(1100px, 100%);
+    background-color: #f4efe7;
+    border-radius: 24px;
+    padding: 48px;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
+}
+
+.contato-form h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.contato-form p {
+    max-width: 520px;
+    margin-bottom: 28px;
+    color: #4d4a45;
+    line-height: 1.8;
+    font-family: "Playfair Display", serif;
+    font-size: 1.05rem;
+}
+
+.contato-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #4d4a45;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid #d9d7d3;
+    border-radius: 14px;
+    background-color: #e7e3dd;
+    color: #2e2b26;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+.contato-form button {
+    margin-top: 10px;
+    padding: 16px 34px;
+    background-color: #d38d5f;
+    border: none;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    transition: background-color 0.3s ease;
+}
+
+.contato-form button:hover {
+    background-color: #c6763f;
+}
+
+.contato-info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+}
+
+.contato-info h2 {
+    margin-bottom: 10px;
+    color: #5b8266;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.contato-info p {
+    color: #3e3b35;
+    line-height: 1.7;
+}
+
+.info-redes {
+    display: flex;
+    gap: 14px;
+    margin-top: 12px;
+}
+
+.rede {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    margin: 20px 0px 20px 0px;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.whatsapp { background-color: #25d366; }
+.instagram { background-color: #E1306C; }
+.facebook { background-color: #1877F2; }
+
+.whatsapp-float {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: #25d366;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-4px);
+}
+
+@media (max-width: 900px) {
+    .contato-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .contato-card {
+        padding: 28px;
+    }
+
+    .contato-form h1 {
+        font-size: 2.4rem;
+    }
+
+    .contato-form input,
+    .contato-form textarea {
+        padding: 16px;
+    }
+
+    .whatsapp-float {
+        right: 18px;
+        bottom: 18px;
+        width: 54px;
+        height: 54px;
+    }
 }
