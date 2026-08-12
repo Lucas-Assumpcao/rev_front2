@@ -111,3 +111,14 @@ a {
 .whatsapp-icon a:hover {
     transform: scale(1.1);
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5B8266;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    padding: 20px 0px 20px 0px;
+}
