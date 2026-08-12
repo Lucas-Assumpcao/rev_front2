@@ -41,25 +41,12 @@ a {
     font-size: 20px;
 }
 
-main{
-     display: flex;
-     height: 100dvh;
-    background-color: #E2935B;
-}
-
-.pai3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-}
-
-/* SERVIÇOS E PRODUTOS SECTIONS */
 .servicos-section,
 .produtos-section {
     padding: 60px 40px;
     background-color: #E2935B;
     text-align: center;
+    max-height: 100%;
 }
 
 .servicos-section h2,
@@ -107,7 +94,6 @@ main{
     line-height: 1.6;
 }
 
-/* WHATSAPP ICON */
 .whatsapp-icon {
     position: fixed;
     bottom: 30px;
@@ -124,35 +110,4 @@ main{
 
 .whatsapp-icon a:hover {
     transform: scale(1.1);
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-    .servicos-grid,
-    .produtos-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 0 20px;
-    }
-    
-    .servicos-section h2,
-    .produtos-section h2 {
-        font-size: 36px;
-    }
-    
-    .card {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .servicos-grid,
-    .produtos-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .servicos-section,
-    .produtos-section {
-        padding: 40px 20px;
-    }
 }
